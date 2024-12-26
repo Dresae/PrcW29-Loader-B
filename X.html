@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>PrcW29-Loader-B</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=DM+Sans&amp;display=swap'>
   <style>
     * {
@@ -17,7 +18,7 @@
         --fg: hsl(var(--hue),10%,10%);
         --primary: hsl(var(--hue),90%,55%);
         --trans-dur: 0.3s;
-        font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
+        font-size: calc(25px + (25 - 20) * (100vw - 320px) / (1280 - 320));
     }
     body {
         background-color: var(--bg);
@@ -31,8 +32,10 @@
             color var(--trans-dur);
     }
     .preloader {
+        position: absolute;
         text-align: center;
-        max-width: 20em;
+        max-width: 15em;
+        max-height: 15em;
         width: 100%;
     }
     .preloader__text {
@@ -187,7 +190,5 @@
             <p class="preloader__msg preloader__msg--last">This is taking long. Something’s wrong.</p>
         </div>
     </div>
-
-  
 </body>
 </html>
